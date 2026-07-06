@@ -7,8 +7,8 @@ env:
 on:
   push:
     branches: ["main"]
-  release:
-    types: [created]  
+  tags:
+    - 'v*'  
 
 jobs:
   test:
